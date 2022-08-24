@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkbackend"]=self["webpackChunkbackend"]||[]).push([[976],{3943:function(e,n,r){r.r(n),r.d(n,{default:function(){return o}});var a=r(3396);const c={class:"wrapper-home"};function t(e,n){return(0,a.wg)(),(0,a.iD)("div",c)}var s=r(89);const u={},d=(0,s.Z)(u,[["render",t],["__scopeId","data-v-1462064e"]]);var o=d}}]);
+//# sourceMappingURL=Homeview.6564e955.js.map

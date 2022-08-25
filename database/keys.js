@@ -4,10 +4,10 @@ dotenv.config();
 module.exports = {
 
     database: {
-        host: process.env.HOST,
-        user: process.env.USER,
-        password: process.env.PASSWORD,
-        database: process.env.DATABASE,
+        host: "srv7.cpanelhost.cl",
+        user: "cba84083_administrador_database",
+        password: "balvin312ll",
+        database: "cba84083_database_control",
         ssl: true
     }
 

@@ -12,7 +12,7 @@ const validateJWT = async (req = request, res = response, next) => {
   }
 
   try {
-      const { id } = jwt.verify(token, process.env.SECRETORPRIVATEKEY);
+      const { id } = jwt.verify(token, "TH1ZSA4S5CKRET1PRVBITHAKE123KSDAZASDSADI");
 
       const getUser = await pool.query('SELECT * FROM users WHERE id = ?', [id]);
 

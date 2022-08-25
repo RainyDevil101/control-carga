@@ -10,7 +10,7 @@ class Server {
 
     constructor() {
         this.app = express();
-        this.port = process.env.PORT;
+        this.port = 3000;
         this.server = require('http').createServer(this.app);
         this.paths = {
             // example: '/api/example',
@@ -75,12 +75,8 @@ class Server {
     initJobs() {
 
         const bree = new Bree({
-            root: false,
             jobs: [{
-                name: 'sendEmail',
-                path: path.join(__dirname, 'sendEmail', '../../jobs/sendEmail.js'),
                 interval : "at 08:30 am",
-
                 worker: {
                     workerData: {
                         description: 'This job will send emails.'

@@ -2,8 +2,11 @@ const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
 const Bree = require('bree');
+const path = require('path');
 
+console.log(process.env.PORT);
 class Server {
+
 
     constructor() {
         this.app = express();
@@ -72,9 +75,12 @@ class Server {
     initJobs() {
 
         const bree = new Bree({
+            root: false,
             jobs: [{
                 name: 'sendEmail',
+                path: path.join(__dirname, 'sendEmail', '../../jobs/sendEmail.js'),
                 interval : "at 08:30 am",
+
                 worker: {
                     workerData: {
                         description: 'This job will send emails.'
